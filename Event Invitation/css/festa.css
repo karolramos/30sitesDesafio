@@ -1,0 +1,148 @@
+
+* {
+	margin: 0; 
+	padding: 0; 
+	font-size: 100%; 
+	box-sizing: border-box; 
+}
+
+
+
+
+nav, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #000;
+}
+
+a:hover {
+ 	background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+header {
+	width: 100%;
+	position: absolute;
+	top:  0;
+	left: 0;
+	display: flex;
+	justify-content: space-between; /* criou espaço entre a logo e o menulist- cada um ficou no canto */
+	align-items: center; /* alinhamento vertical */
+	padding: 20px 50px; /* top-bottom laterais */
+	background: #eee;
+	border:  2px solid black;
+
+ }
+
+header nav {
+	display: flex; /* itens do menusup lado a lado */
+}
+
+header li a {
+	color:  #000;
+}
+
+/* quando a janela tiver menor q 700 o menu vai pular pra baixo */
+@media(max-width: 700px) {
+	header {
+		flex-direction: column;
+	}
+
+	.container h1{
+		font-size: 2rem;
+	}
+	.container h3{
+		font-size: 1rem;
+	}
+}
+
+.container h1 {
+	font-size: 3.2rem;
+	margin-bottom: 15px;
+	color: #000;
+	font-family: 'Bungee Shade', cursive;
+}
+
+.container img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+.container h3 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+
+
+.container {
+ 	background-size: cover; 
+	min-height: 100vh; /*100% */
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center; /* alinhamento vert */
+	flex-direction: column;
+	text-align: center;
+	background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+	border:  2px solid black;
+
+}
+
+.lista {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	padding: 50px 50px;
+	border:  2px solid black;
+	flex-wrap: wrap;
+}
+.lista h3 {
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: #000;
+	text-align: center;
+}
+
+.lista p {
+	max-width: 800px;
+	margin-bottom: 35px;
+	padding: 10px 30px;
+	color: #000;
+}
+.lista li {
+	padding: 10px 30px;
+}
+
+strong {
+	font-size: 1.5rem;
+}
+
+.lista li:hover {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.lista p:hover {
+	background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0;
+	align-items: center;
+	background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+	border:  2px solid black;
+}
+
+footer p:hover{
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+
+}	
+
+/* .container img:hover{
+  border: 1px solid #fbc2eb;
+
+} */

@@ -1,0 +1,339 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+/* selecionando toodas as tags */
+* {
+    box-sizing: border-box;
+}
+
+/* SuperInfo */
+
+/*
+.superinfo-bg {
+    background: #FFA07A;
+    color:  white;
+}
+
+.superinfo {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; criou um espaço igual entre os itens
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.superinfo p, .superinfo a {
+    margin: 0 10px 10px 10px;
+}
+
+.superinfo a {
+    color: white;
+}
+*/
+
+/* Menu */
+
+
+
+.menu-bg {
+	background: #FFA07A;
+}
+
+.menu {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 15px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu a {
+	color: white;
+}
+
+.menu-logo a{
+	font-size: 2.25em;
+	font-weight: bold;
+	margin: 0 10px; 
+}
+
+.menu-nav ul{
+	display: flex;
+	flex-wrap: wrap; /* quebrar qndo estourar*/
+	text-transform: uppercase;
+}
+
+.menu-nav a {
+	font-size: 1.1em;
+	font-weight: bolder;
+	display: block;
+	padding: 10px; /*cima-baixo*/
+}
+
+.menu-nav a:hover {
+	color: #7c7c7c;
+}
+
+/* TITULO PRINCIPAL */
+
+.titulo {
+	font-size: 5em;
+	line-height:  1;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 60px 10px;
+	font-family: 'Dancing Script', cursive;
+}
+
+/* About */
+
+.about {
+	border-top:  2px solid #D3D3D3;
+	border-bottom:  2px solid #D3D3D3;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 60px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.about-info {
+	flex: 2 1 300px;
+	margin: 0 10px;
+}
+.about-info h1 {
+	font-size: 2.5em;
+	margin-bottom:  .5em;
+}
+
+.about-info p {
+	font-size: 1.1em;
+	line-height: 1.1;
+	margin-bottom: 1em;
+	color: #7c7c7c;
+}
+.about-img {
+	flex: 1 1 160px;
+	margin: 0 10px;
+}
+.img-about {
+	border-radius: 50%;
+	border: 4px  dotted #FFA07A;
+	transition: all 0.5s;
+}
+.img-about:hover {
+	transform: scale(1.1);
+}
+
+/* Projects */
+
+.projects {
+	max-width: 960px;
+	margin: 60px auto;	
+}
+
+.projects h1 {
+	font-size: 2.5em;
+	margin: 0 10px 60px 10px;
+}
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.project-item {
+	flex: 1 1 175px;
+	margin: 10px;
+}
+.project-item h2 {
+	font-size: 2em;
+	color: #a4a4a4;
+	background: #f7f7f7;
+	padding: 30px 20px;
+}
+
+.project1 {
+	border-top: 8px solid #FFA07A;
+}
+.project2 {
+	border-top: 8px solid #FFA07A;
+}
+.project3 {
+	border-top: 8px solid #FFA07A;
+}
+
+/* Main */
+
+.main {
+	background: #f7f7f7;
+	padding: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.skills, .hobbies, .interests {
+	flex: 1 1 260px;
+	border: 4px groove #a4a4a4;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 10px;
+	min-width: 260px;
+}	
+
+.skills h2, .hobbies h2, .interests h2{
+	font-size: 2em;
+	color: #a4a4a4;
+	text-align: center;
+	margin-top: 20px;
+}
+.icones {
+	align-items: center;
+	margin-right: 10px;
+	font-size: 2em;
+	width: 45px;
+	height: 45px;
+}
+.icones:hover {
+	color: #FFA07A;
+}
+
+.skills ul, .hobbies ul, .interests ul {
+	max-width:  300px;
+	margin:  20px auto;
+	font-size:  1.2em;
+	color: #7c7c7c;
+	text-align: justify;
+}
+
+.skills li, .hobbies li, .interests li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.skills li:hover, .hobbies li:hover, .interests li:hover {
+	color: #FFA07A;
+	font-weight: bold;
+}
+
+
+/* Contato */
+.contact {
+	background: #f7f7f7;
+	padding: 60px calc((100% - 960px ) / 2 );
+	display: flex;
+	flex-wrap: wrap;
+/*
+	border-top:  2px solid #D3D3D3;
+	max-width: 960px;
+	margin: 0 auto;
+*/
+}
+
+.contact-info {
+	flex: 2 1 240px;
+	margin: 0 10px;
+}
+
+.contact h1{
+	font-size: 2.5em;
+	margin-bottom: 5px;
+}
+
+.contact li {
+	font-size: 1.25em;
+	margin-bottom: 10px;
+	max-width: 240px;
+}
+
+.redes-sociais {
+	flex:  1 1 260px;
+	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+/*	align-items: center;*/
+	padding: 15px 10px;
+}
+.rede-item a {
+
+}
+
+.rede-item a:visited{
+	
+}
+
+.footer {
+	height: 200px;
+	display: flex;
+	background:  #FFA07A;
+	align-items: center
+}
+.footer p {
+	flex: 1;
+	text-align: center;
+	font-size: 1.8em;
+	color: white;
+}
+
+
+
+/* Hello */
+.frase {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.9em;
+}
+.frase:hover{
+	color: white;
+	font-weight: bold;
+}
+
+.email:hover {
+	font-weight: 600;
+}
+
+@media (max-width: 800px) {
+	.main {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.main .skills {
+		order:  -2;
+	}	
+}
+
+
+.img{
+
+}
+
+.img:hover{
+/*	transform: rotateZ(-30deg);*/
+/*	transition: 1.5s;*/
+}
+
+
+
+

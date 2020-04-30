@@ -1,0 +1,97 @@
+/*
+  color: #F58594; rosa
+  font-family: 'Chewy', cursive;
+  color: #61B1BF; claro
+  background: #154374; escuro
+  font-family: 'Playfair Display', serif;  
+  linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  font-family: 'Dancing Script', cursive;
+*/
+
+
+/* Reset */
+* {
+  margin: 0; 
+  padding: 0; 
+  font-size: 100%; 
+  box-sizing: border-box; 
+}
+
+.container{
+
+}
+
+.borda {
+/*   background-image: url('../img/festa2.jpg'); 
+ */  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /*100%*/
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* alinhamento vert */
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  border: groove 40px #fff;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.borda h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  font-family: 'Dancing Script', cursive;
+
+}
+
+.borda h3 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.btn {
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+ 
+
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 10px #eee;
+  border-radius: 5px;
+  border: 2px groove #fff;
+
+}
+
+.btn:hover{
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    background-position: right center;
+}
+
+@media (max-width: 700px) {
+  .borda {
+    flex-direction: column;
+    border: none;
+  }
+  .borda .btn {
+    padding: 20px 10px;
+  }
+
+  .borda h1{
+    font-size: 2.5rem;
+  }
+  .borda h3{
+    font-size: 1.2rem;
+  }
+}

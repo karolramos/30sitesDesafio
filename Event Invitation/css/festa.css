@@ -45,22 +45,10 @@ header li a {
 	color:  #000;
 }
 
-/* quando a janela tiver menor q 700 o menu vai pular pra baixo */
-@media(max-width: 700px) {
-	header {
-		flex-direction: column;
-	}
 
-	.container h1{
-		font-size: 2rem;
-	}
-	.container h3{
-		font-size: 1rem;
-	}
-}
 
 .container h1 {
-	font-size: 3.2rem;
+	font-size: 4rem; /*3.2rem*/
 	margin-bottom: 15px;
 	color: #000;
 	font-family: 'Bungee Shade', cursive;
@@ -142,7 +130,25 @@ footer p:hover{
 
 }	
 
-/* .container img:hover{
-  border: 1px solid #fbc2eb;
 
-} */
+
+@media(max-width: 700px) {
+	header {
+		flex-direction: column;
+	}
+
+	.container h1{
+		font-size: 2.5rem;
+	}
+	.container h3{
+		font-size: 1.5rem;
+	}
+}
+@media(max-width: 300px){
+	.container h1{
+		font-size: 2.3rem;
+	}
+	.container h3{
+		font-size: 1.3rem;
+	}
+}

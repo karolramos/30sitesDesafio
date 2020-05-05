@@ -1,0 +1,151 @@
+* {
+	margin: 0; 
+	padding: 0; 
+	font-size: 100%; 
+	box-sizing: border-box; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+nav, ul {
+	list-style: none;
+}
+
+
+nav a {
+	text-decoration: none;
+	cursor: pointer;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #028090 !important;
+}
+
+
+/* Conheça  - Paisagem principal e configs*/
+.historia-jp {
+	background-image: url('../img/aereas_joaopessoa_foto_alessandropotter_008.jpg'); 
+	background-size: cover; 
+	min-height: 100vh; 
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center; /* alinhamento vert */
+	flex-direction: column;
+	text-align: center;
+    border-top: 2px solid #028090;
+    border-bottom: 2px solid #028090;
+}
+
+.historia-jp h1 {
+	font-size: 3.2rem;
+	margin-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.historia {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 50px;
+}
+.historia h3 {
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: #000;
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.historia p {
+	max-width: 800px;
+	margin-bottom: 35px;
+	color: #000;
+	text-align: left;
+}
+
+.historia a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#028090;
+    font-weight: bold;
+}
+
+.historia a:hover {
+    color: darkslategrey;
+}
+
+
+
+
+/* footer */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #028090;
+	padding: 50px 0;
+	align-items: center;
+}
+footer ul {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+footer ul li {
+	margin-right: 10px;
+}	
+footer ul li:last-child {
+	margin-right: 0; 
+
+}
+
+footer ul li a {
+	color: #fff;
+	font-size: 2rem;
+}
+
+footer a:hover{
+    color: #02c39a;
+}
+
+.links-ref {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+	color: #fff;
+	text-align: center;
+}
+
+
+@media (max-width: 700px) {
+	.historia-jp h1{
+		font-size: 2.5rem;
+	}
+    
+     .contato h3 {
+        font-size: 1.6rem;
+    }
+    
+    .historia {
+        padding: 50px 25px;
+    }
+}
+    
+@media(max-width: 460px) {
+    .historia-jp h1 {
+        font-size: 2rem;
+    }
+    
+    .historia p {
+        font-size:  0.9rem;
+    }
+}

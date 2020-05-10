@@ -1,0 +1,137 @@
+
+
+
+
+body {
+	font-family: 'Playfair Display', serif;
+	background: #F1F3F5;
+}
+
+
+.navbar {
+/* 	padding-top: 0px !important; */
+
+}
+
+.logo {
+/* 	border: 2px dashed rgb(227, 221, 221);
+ */}
+.logo:hover{
+	transform: rotateZ(360deg);
+}
+
+.header {
+	padding-top: 0px;
+	border-bottom: 2px solid rgb(227, 221, 221);
+/* 	border-top: 2px solid rgb(227, 221, 221);
+ */}
+
+.navbar-nav .nav-link {
+/* 	text-transform: uppercase;
+ */	font-family: 'Rochester', cursive;
+ 	font-size: 1.5rem;
+}
+.nome-loja {
+	text-transform: none;
+	font-family: 'Rochester', cursive;
+	font-size: 2rem;
+}
+
+.container {
+
+}
+
+.btn {
+	border-radius: 0;
+	box-shadow: 0 0 20px #eee;
+	transition: 0.5s;
+
+}
+
+.btn:hover {
+ 	background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+ 	color: #222;
+}
+
+
+.far {
+	color: #fca311;
+	transition: all 0.5s;
+}
+.far:hover{
+	color: gold;
+	transform: scale(1.5);
+
+}
+
+img {
+	
+	transition: 2s;
+}
+img:hover{
+}
+
+.img-fluid{
+	box-shadow: 0 0 20px #a1c4fd;
+	transition: 0.5s;
+
+	
+}
+
+.img-fluid:hover{
+	border-radius: 20px;
+	filter: grayscale(1);
+}
+
+.card-img-top {
+	transition: 0.5s;
+}
+.card-img-top:hover{
+	filter: grayscale(1);
+}
+
+.card-deck .card  {
+	box-shadow: 0 0 20px #a1c4fd;
+}
+.card-grande{
+	box-shadow: 0 0 20px #a1c4fd;
+}
+
+h5 {
+	font-weight: bold;
+}
+
+
+.row {
+	box-shadow: 0 0 20px #a1c4fd;
+	padding: 20px 20px;
+}
+
+footer {
+	border-top: 2px solid rgb(227, 221, 221);
+	margin-top: 50px;
+	padding-top: 10px;
+	text-align: center;
+	color:  #000;
+}
+
+
+
+@media(max-width: 770px) {
+	.card-deck{
+		flex-direction: column;
+	}
+	.card-deck .card{
+		margin-bottom: 10px !important;
+	}
+	
+}
+
+@media(max-width: 990px){
+	.vayne{
+ 		order: 1;
+ 	}
+ 	.vayne-p{
+ 		order: 0;
+ 	}
+}

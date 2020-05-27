@@ -5,6 +5,7 @@
 body {
 	font-family: 'Playfair Display', serif;
 	background: #F1F3F5;
+
 }
 
 
@@ -13,9 +14,6 @@ body {
 
 }
 
-.logo {
-/* 	border: 2px dashed rgb(227, 221, 221);
- */}
 .logo:hover{
 	transform: rotateZ(360deg);
 }
@@ -23,12 +21,10 @@ body {
 .header {
 	padding-top: 0px;
 	border-bottom: 2px solid rgb(227, 221, 221);
-/* 	border-top: 2px solid rgb(227, 221, 221);
- */}
+}
 
 .navbar-nav .nav-link {
-/* 	text-transform: uppercase;
- */	font-family: 'Rochester', cursive;
+	font-family: 'Rochester', cursive;
  	font-size: 1.5rem;
 }
 .nome-loja {
@@ -45,7 +41,8 @@ body {
 	border-radius: 0;
 	box-shadow: 0 0 20px #eee;
 	transition: 0.5s;
-
+	/* padding: 10px;
+	margin: 5px 0; */
 }
 
 .btn:hover {
@@ -64,8 +61,12 @@ body {
 
 }
 
+p{
+	font-size: .975rem;
+}
+
 img {
-	
+
 	transition: 2s;
 }
 img:hover{
@@ -75,7 +76,7 @@ img:hover{
 	box-shadow: 0 0 20px #a1c4fd;
 	transition: 0.5s;
 
-	
+
 }
 
 .img-fluid:hover{
@@ -97,14 +98,19 @@ img:hover{
 	box-shadow: 0 0 20px #a1c4fd;
 }
 
+.card-deck {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
 h5 {
 	font-weight: bold;
 }
 
 
 .row {
-	box-shadow: 0 0 20px #a1c4fd;
-	padding: 20px 20px;
+	/* box-shadow: 0 0 20px #a1c4fd; */
+	/* padding: 20px 20px; */
 }
 
 footer {
@@ -124,7 +130,7 @@ footer {
 	.card-deck .card{
 		margin-bottom: 10px !important;
 	}
-	
+
 }
 
 @media(max-width: 990px){

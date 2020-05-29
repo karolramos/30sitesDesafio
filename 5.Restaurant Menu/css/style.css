@@ -1,0 +1,292 @@
+body, p, h1, h2, ul, li {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	font-family: 'Playfair Display', serif;
+	color: #252525;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* MENU */
+
+.header-informacoes {
+	font-size: 0.875em;
+	background: #d6d3c8;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.titulo {
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	margin: 40px auto;
+}
+
+
+.header-menu {
+	border-top: 3px solid #d6d3c8;
+	border-bottom: 3px solid #d6d3c8;
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 20px 0;
+}
+
+.header-menu li {
+	display: inline-block;
+}
+
+.header-menu li a {
+	display: block;
+	padding: 5px 10px 5px 0;
+	text-decoration: none;
+	color: #252525;
+	font-size: 1.125em;
+}
+.header-menu li a:hover{
+	color: #553C3B;
+	font-weight: bold;
+}
+
+.header-menu li a::before {
+	content: '•';
+	padding-right: 10px;
+}
+
+.header-menu li:first-child a::before {
+	content: '';
+}
+
+/* CONTEÚDO */
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.container::after, .container::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* FILTRO */
+
+.filtro {
+	background: #e7e4d8;
+	border: 3px solid #d6d3c8;
+	width: 300px;
+	margin: 0 10px;
+	padding: 20px;
+	float: left;
+	font-family: Georgia, serif;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+	.container {
+		max-width: 720px;
+	}
+	.filtro {
+		width: 220px;
+	}
+	.filtro li {
+		font-size: 0.975rem;
+	}
+	.filtro h2{
+		font-size: 1rem;
+	}
+	.produtos h1{
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 739px) {
+	.container {
+		max-width: 300px;
+	}
+	.filtro {
+		display: none;
+	}
+}
+
+.filtro h2 {
+	font-size: 1.125em;
+	padding: 10px 0
+}
+
+.filtro div {
+	border-top: 3px solid #c0beb4;
+	border-bottom: 3px solid #c0beb4;
+	padding: 10px 0;
+}
+
+.selecionar {
+	display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.selecionar input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+}
+
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 28px;
+  width: 28px;
+	border: solid 2px #c0beb4;
+
+}
+/*passando mouse */
+.selecionar:hover input ~ .checkmark {
+  background-color: #ddd8c4;
+}
+.selecionar input:checked ~ .checkmark {
+  background-color: #ddbea9;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.selecionar input:checked ~ .checkmark:after {
+  display: block;
+}
+.selecionar .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.sabor {
+	overflow: hidden;
+}
+
+.sabor li {
+	text-indent: -200px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: currentColor;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.sabor-3 {
+	color: #ffc09f;
+	box-shadow: 20px 0 0 0 currentColor,
+							40px 0 0 0 currentColor;
+}
+
+.sabor-4 {
+	color: #553c3b;
+	box-shadow: 20px 0 0 0 currentColor,
+							40px 0 0 0 currentColor,
+							60px 0 0 0 currentColor;
+}
+
+.sabor-5 {
+	color: #231c21;
+	box-shadow: 20px 0 0 0 currentColor,
+							40px 0 0 0 currentColor,
+							60px 0 0 0 currentColor,
+							80px 0 0 0 currentColor;
+}
+
+/*PRODUTOS*/
+
+.produtos {
+	width: 620px;
+	margin: 0 10px;
+	float: left;
+}
+
+.produtos h1 {
+	font-size: 3em;
+	font-weight: normal;
+}
+
+.produtos li {
+	width: 300px;
+	float: left;
+}
+
+.produtos li:nth-child(even) {
+	margin-left: 20px;
+}
+
+.produtos li img {
+	display: block;
+	max-width: 100%;
+	border: 3px solid #fff;
+	box-shadow: 0 0 0 3px #252525;
+	margin: 40px 3px 0 3px;
+}
+.produtos li span {
+	background: #e2cfc4;
+	padding: 10px;
+	font-size: 0.875em;
+	font-weight: bold;
+	position: relative;
+	top: -15px;;
+}
+
+.produtos li h2 {
+	font-size: 0.875em;
+	font-weight: normal;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+	.produtos {
+		width: 460px;
+	}
+	.produtos li {
+		width: 220px;
+	}
+}
+
+@media (max-width: 739px) {
+	.produtos {
+		width: 300px;
+	}
+	.produtos li {
+		width: 140px;
+	}
+}
+
+.footer {
+	background: #e7e4d8;
+	text-align: center;
+	padding: 60px 0;
+	font-size: 1.125em;
+	line-height: 1.4em;
+	margin-top: 80px;
+}

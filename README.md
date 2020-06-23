@@ -16,9 +16,10 @@ Desafio para praticar front-end.
 
    <li>
       <a href="https://karolramos.github.io/30sitesDesafio/5.Restaurant Menu/>5.Restaurant Menu</a>
-  <li>
-    <a href="https://karolramos.github.io/30sitesDesafio/5.Restaurant Menu/">5.Restaurant Menu</a>
    </li>
+               
+   <li>
+      <a href="https://karolramos.github.io/30sitesDesafio/6.Book-Author/>6.Book-Author</a>
+   </li>             
+                                                                            
 </ul> 
-
-

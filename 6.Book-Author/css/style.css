@@ -1,0 +1,371 @@
+body, h1, h2, p, ul, li, a {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #222222;
+	background-color: #fff;
+/*	overflow-x: hidden;
+*/}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+ 
+
+.menu-bg {
+	background-color: #252323;
+}
+
+.menu {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-logo h2 a{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-family: 'Major Mono Display', monospace;
+}
+
+.menu a {
+	color: white;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.menu-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu-nav a {
+	font-size: 1.25em;
+	display: block;
+	padding: 10px;
+}
+
+.menu-nav a:hover{
+	color: #ccc;
+}
+
+
+
+/*Sobre*/
+
+.sobre {
+	border-bottom: 2px solid #222;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 60px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sobre-info {
+	flex: 1 1 300px;
+	margin: 0 5px;
+}
+
+h1{
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.sobre-info h1 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+.sobre-info p {
+	font-size: 1.1em;
+	line-height: 1.2;
+	margin-bottom: 0.5em;
+	color: #222;
+	padding: 5px;
+}
+
+.sobre-img {
+	flex: 2 1 350px;
+	margin: 0 5px;
+}
+
+
+/************img background***************/
+.livros-main {
+	width: 100%;
+	margin: 60px auto;
+	opacity: 0.9;
+}
+
+.livros-main h1 {
+	font-size: 2.5em;
+	margin: 0 10px 40px 10px;
+	text-align: center;
+}
+
+.livros-container {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+	border-top: 3px solid #fff;
+}
+
+
+.livro-item h2 {
+	font-size: 3em;
+	color: #a4a4a4;
+	background: #f7f7f7;
+	padding: 60px 20px;
+}
+
+
+
+/*  frase destaque */
+.frase {
+	max-width: 960px;
+	margin: 40px auto;
+	padding: 50px;
+	font-size: 2em;
+	font-family: 'Julius Sans One', sans-serif;
+}
+/*********************/
+
+/******* livros para comprar - preço ********/
+.preco {
+	padding: 40px 2%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+
+}
+
+.preco-item img{
+	flex: 1 1 260px;
+	border: 4px solid white;
+	margin: 10px auto;
+	padding: 20px;
+}
+
+.preco-item h2 {
+	font-size: 3em;
+	color: #a4a4a4;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.button{
+	padding: 10px 30px;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 10px auto;
+	background-color: white;
+  color: #222;
+  border: 2px solid #222;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+/********************************/
+
+.metro {
+	max-width: 960px;
+	margin: 60px auto;
+	padding: 10px; 
+}
+
+.metro-info h1 {
+	font-size: 2.25em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.metro img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+.metro-info p {
+	font-size: 1.1em;
+	line-height: 1.4;
+	color: #222;
+	margin-bottom: 1em;
+}
+
+/*Newsletter*/
+
+.newsletter {
+	background: #f7f7f7;
+	padding: 60px calc((100% - 960px) / 2 );
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.newsletter-info {
+	flex: 1 1 240px;
+	margin: 0 10px;
+}
+
+.newsletter-info h1 {
+	font-size: 3em;
+	color: #a4a4a4;
+}
+
+.newsletter-info p {
+	font-size: 1.25em;
+	font-style: italic;
+	max-width: 230px;
+	color: #7c7c7c;
+	margin-bottom: 10px;
+}
+
+.newsletter-form {
+	flex: 2 1 260px;
+	margin: 0 10px;
+	align-self: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.newsletter-form input {
+	flex: 3 1 260px;
+	font-size: 1.25em;
+	color: #7c7c7c;
+	font-style: italic;
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	border: 4px solid #252323;
+	background: transparent;
+	padding: 15px 10px;
+	margin: 0px;
+	border-radius: 0px;
+}
+
+.newsletter-form button {
+	flex: 1 1 260px;
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	font-size: 2.25em;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #252323;
+	color: white;
+	margin: 0px;
+	cursor: pointer;
+	border: 0px;
+	padding: 15px 10px;
+}
+
+
+
+/*Footer*/
+
+.footer {
+	display: flex;
+	background-color: #252323;
+	height: 100px;
+	align-items: center;
+}
+
+.footer p {
+	flex: 1;
+	text-align: center;
+	font-size: 1.25em;
+	color: #ccc;
+}
+/* pág de livros */
+.img-autor2{
+		width: 100%;
+	}
+.sobre-autor2 p{
+	font-size: 1.1em;
+	line-height: 1.2;
+	color: #222;
+	padding: 10px;
+}
+
+@media (max-width: 668px) {
+	.newsletter-form button {
+		font-size: 1.5em;
+	}
+	.sobre{
+		padding: 20px 0;
+		
+	}
+	.sobre-info h1 {
+		margin-top: 10px;
+	}
+	.frase{
+		font-size: 1.5em;
+	}
+	
+}
+
+
+@media (max-width: 480px){
+	.sobre-info h1 {
+		font-size: 1.3em;
+	}
+	.sobre-info p{
+		font-size: 1em;
+	}
+	.frase{
+		font-size: 1.2em;
+		padding: 30px;
+	}
+
+	.menu a {
+		font-size: .9rem;
+		font-weight: bold;
+	}
+	.menu{
+		text-align: center;
+		justify-content: center;
+	}
+
+	.menu-logo h2 a{
+	font-size: 1.2rem;
+	}
+	.metro-info{
+		font-size: .9em;
+	}
+
+	.newsletter-info h1 {
+		font-size: 2em;
+	}
+
+	.newsletter-form {	
+		margin: 0 auto;
+	}
+
+	.newsletter-form input {
+		font-size: 1em;
+	}
+
+	.newsletter-form button {	
+		font-size: 1.8em;
+	}
+}

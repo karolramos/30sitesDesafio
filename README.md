@@ -13,9 +13,14 @@ Desafio para praticar front-end.
   <li>
     <a href="https://karolramos.github.io/30sitesDesafio/4.Product%20Site/">4.Product Site</a>
   </li>
+<<<<<<< HEAD
 
    <li>
       <a href="https://karolramos.github.io/30sitesDesafio/5.Restaurant Menu/>5.Restaurant Menu</a>
+=======
+  <li>
+    <a href="https://karolramos.github.io/30sitesDesafio/5.Restaurant Menu/">5.Restaurant Menu</a>
+>>>>>>> 1314c35833e1f1f4a4d1761074acd6fbfe1ba0ac
    </li>
 </ul> 
 

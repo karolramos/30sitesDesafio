@@ -1,5 +1,5 @@
 # 30sitesDesafio
-Desafio para praticar front-end.
+Desafio para praticar o front-end.
 <ul>
   <li>
     <a href="https://karolramos.github.io/30sitesDesafio/1.Portf%C3%B3lio/">1.Portfólio</a>
@@ -21,5 +21,5 @@ Desafio para praticar front-end.
    <li>
       <a href="https://karolramos.github.io/30sitesDesafio/6.Book-Author/>6.Book-Author</a>
    </li>             
-                                                                            
+
 </ul>

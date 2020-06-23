@@ -21,6 +21,6 @@ Desafio para praticar o front-end.
    <a href="https://karolramos.github.io/30sitesDesafio/6.Book-Author">6.Book-Author</a>
  </li>  
  <li>
-   <a href="https://karolramos.github.io/30sitesDesafio/7.Social-Media">7.Social-Media/</a>
+   <a href="https://karolramos.github.io/30sitesDesafio/7.Social-Media">7.Social-Media</a>
  </li>
 </ul>
